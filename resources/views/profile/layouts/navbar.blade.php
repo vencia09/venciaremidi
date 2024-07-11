@@ -1,0 +1,24 @@
+<!------------------- NAVBAR ------------------------>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-lg-4 ms-3 ms-lg-0">
+                    <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
+                </li>
+               
+                <li class="nav-item mx-lg-4 ms-3 ms-lg-0">
+                    <a class="nav-link {{ request()->is('layanan') ? 'active' : '' }}" href="/layanan">Portofolio</a>
+                </li>
+                
+                <li class="nav-item mx-lg-4 ms-3 ms-lg-0 mb-3 mb-lg-0">
+                    <a class="nav-link {{ request()->is('kontak') ? 'active' : '' }}" href="/kontak">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!------------------- END NAVBAR ------------------------>
